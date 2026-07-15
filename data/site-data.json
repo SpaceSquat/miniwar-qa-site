@@ -522,7 +522,751 @@
         "\\b(super worker|super workers|civilians|civilian|max house|houses|manor|helix tower|double turbo tower|worker|0/4|4/4|population)\\b"
       ],
       "summary": "Super Workerの入手・割当、Civilian数、家/塔/人口上限。",
-      "main_answer": "Super Workerは建物完成時の運要素で、0/4→4/4のように任意で埋めるものではなさそう。Helix Tower以上からSuper Workerが出るという回答あり。Double Turb…7003 tokens truncated…Auto Buy / Shopping Centerはオフラインでは動かないという回答が多い。対象をGemで解放し、オンライン中に買う機能として理解されている。Auto CollectはAuto Sellより価値が高いという意見が複数。",
+      "main_answer": "Super Workerは建物完成時の運要素で、0/4→4/4のように任意で埋めるものではなさそう。Helix Tower以上からSuper Workerが出るという回答あり。Double Turbo Towerは40、研究込み41という回答がある。",
+      "other_opinions": "古い建物にSuper Workerが付くか、建て直しで最大化できるかは未確定。Civilian不足はFarm停止/オフライン収益低下と関係する可能性。",
+      "examples": [
+        [
+          "How do I get Super Workers?",
+          "Super Workerはどうやって入手しますか？"
+        ],
+        [
+          "How do I get it to 4/4?",
+          "Super Workerを4/4にするにはどうすればいいですか？"
+        ]
+      ],
+      "count_total": 173,
+      "count_qa": 135,
+      "count_general": 38,
+      "date_counts": {
+        "2026-06-16": 1,
+        "2026-06-18": 4,
+        "2026-06-21": 21,
+        "2026-06-22": 3,
+        "2026-06-23": 7,
+        "2026-06-24": 2,
+        "2026-06-25": 6,
+        "2026-06-26": 8,
+        "2026-06-27": 6,
+        "2026-06-28": 4,
+        "2026-07-01": 3,
+        "2026-07-02": 10,
+        "2026-07-05": 5,
+        "2026-07-06": 10,
+        "2026-07-07": 2,
+        "2026-07-08": 13,
+        "2026-07-09": 1,
+        "2026-07-10": 1,
+        "2026-07-11": 9,
+        "2026-07-12": 17,
+        "2026-07-13": 16,
+        "2026-07-14": 21,
+        "2026-07-15": 3
+      },
+      "peak_dates": [
+        {
+          "date": "2026-06-21",
+          "count": 21
+        },
+        {
+          "date": "2026-07-14",
+          "count": 21
+        },
+        {
+          "date": "2026-07-12",
+          "count": 17
+        }
+      ],
+      "raw_examples": [
+        "wait thres v2 worker statues?",
+        "Whats the best houses to use",
+        "how to get worker statue v2?",
+        "How many civilians does the double turbo tower give?",
+        "How many civilians does the double turbo tower give? 41",
+        "How do we get super workers again?",
+        "How do we get super workers again? super what now?",
+        "how i get super worker"
+      ]
+    },
+    {
+      "id": "stock_shop",
+      "title": "Shop / Stock / Market / Restock",
+      "group": "Shop",
+      "confidence": "高",
+      "patterns": [
+        "\\b(stock|restock|market|shop|out of stock|secret rarity|stock notifier|black market|server hop|different markets|live stock)\\b"
+      ],
+      "summary": "ショップ在庫、在庫通知、個人別Stock、Restock研究/通知。",
+      "main_answer": "Shop/Stockはプレイヤーごとに違うという回答が非常に多く、Grow a Garden型の共通Stock通知は基本成立しにくい。Stockサーバーや通知botは期待薄。",
+      "other_opinions": "Auto clicker/TinyTaskで欲しい商品にカーソルを置いて待つという話もあるが、推奨行為かは別。Secretが常にOut of Stockに見える問題も報告。",
+      "examples": [
+        [
+          "Is there a stock notifier like Grow a Garden?",
+          "Grow a GardenのようなStock通知はありますか？"
+        ],
+        [
+          "Can you server hop for different markets?",
+          "別Market狙いでサーバーホップできますか？"
+        ]
+      ],
+      "count_total": 183,
+      "count_qa": 119,
+      "count_general": 64,
+      "date_counts": {
+        "2026-06-15": 4,
+        "2026-06-16": 3,
+        "2026-06-17": 4,
+        "2026-06-18": 2,
+        "2026-06-19": 3,
+        "2026-06-20": 5,
+        "2026-06-22": 4,
+        "2026-06-23": 11,
+        "2026-06-24": 3,
+        "2026-06-25": 9,
+        "2026-06-26": 3,
+        "2026-06-27": 2,
+        "2026-06-28": 4,
+        "2026-06-29": 3,
+        "2026-06-30": 4,
+        "2026-07-01": 4,
+        "2026-07-02": 5,
+        "2026-07-03": 1,
+        "2026-07-04": 13,
+        "2026-07-05": 6,
+        "2026-07-06": 7,
+        "2026-07-08": 1,
+        "2026-07-10": 6,
+        "2026-07-11": 5,
+        "2026-07-12": 25,
+        "2026-07-13": 15,
+        "2026-07-14": 29,
+        "2026-07-15": 2
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 29
+        },
+        {
+          "date": "2026-07-12",
+          "count": 25
+        },
+        {
+          "date": "2026-07-13",
+          "count": 15
+        }
+      ],
+      "raw_examples": [
+        "Is 100% on the market price 0%?",
+        "Is the a stock server for the shop",
+        "Is the a stock server for the shop Yes, we are launching one soon. But it might not work as everybody in the game got different stocks than the other people.",
+        "where is the special bro go to shop",
+        "Where can I check live stock???",
+        "Where can I check live stock??? not released",
+        "each person's stock is different ok",
+        "Is there a restock channel"
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research / Automation / Booster / Unlock",
+      "group": "研究",
+      "confidence": "中",
+      "patterns": [
+        "\\b(research|automation|booster|busters|faster restock|unlock|tech tree|techtree|qol|bonus|boosters work|0 % boost)\\b"
+      ],
+      "summary": "研究ツリー、Automation、Research Booster、Faster Restock、解放条件。",
+      "main_answer": "AutomationはFarmの生産資源を+1する系と解釈されている。Research Bonus/Boosterは研究速度を上げる。Research BoosterはMAX 36%など上限の話があり、複数設置の効果は上限に注意。",
+      "other_opinions": "Research Boosterが0%表示、Private Serverで反映されないように見える、4個以上の意味があるかなど未確定が多い。",
+      "examples": [
+        [
+          "What does Automation do?",
+          "Automationは何をしますか？"
+        ],
+        [
+          "Is it worth placing more than 3 Research Boosters?",
+          "Research Boosterを3個以上置く価値はありますか？"
+        ]
+      ],
+      "count_total": 170,
+      "count_qa": 103,
+      "count_general": 67,
+      "date_counts": {
+        "2026-06-16": 1,
+        "2026-06-18": 1,
+        "2026-06-21": 4,
+        "2026-06-22": 13,
+        "2026-06-23": 3,
+        "2026-06-24": 1,
+        "2026-06-25": 1,
+        "2026-06-26": 3,
+        "2026-06-27": 2,
+        "2026-06-28": 3,
+        "2026-06-29": 4,
+        "2026-06-30": 2,
+        "2026-07-01": 3,
+        "2026-07-02": 2,
+        "2026-07-04": 5,
+        "2026-07-05": 11,
+        "2026-07-06": 3,
+        "2026-07-07": 3,
+        "2026-07-08": 3,
+        "2026-07-09": 4,
+        "2026-07-10": 2,
+        "2026-07-12": 35,
+        "2026-07-13": 17,
+        "2026-07-14": 44
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 44
+        },
+        {
+          "date": "2026-07-12",
+          "count": 35
+        },
+        {
+          "date": "2026-07-13",
+          "count": 17
+        }
+      ],
+      "raw_examples": [
+        "how do the research boosters work? mine jsut says 0 % boost",
+        "U sure? It doesn’t seem right for the game to put 41, id expect 45, 50, 55, etc +1 from research",
+        "Wait what was it new research stuff I think?",
+        "How much of a difference does the Faster Restock research actually make?",
+        "But civ cap is only affected by camps vases oil rigs and ur own research not by ur houses that only affects how many of ur cap you can get",
+        "Oh, I suppose they should add a tool where you can assign super workers like with the army and selecting which buildings apply That might be a research upgrade in the future",
+        "should i get rid of the research labs?",
+        "should i get rid of the research labs? Ye I was in the same situation, I kept them until I had full nuclear rest for"
+      ]
+    },
+    {
+      "id": "builders",
+      "title": "Builder / 2x Building Speed / Construction Yard周辺",
+      "group": "建設",
+      "confidence": "中",
+      "patterns": [
+        "\\b(builder|builders|2x build|2x building|building speed|construction yard|construction truck|construction|build faster|build speed|12 builders|8 builders)\\b"
+      ],
+      "summary": "Builder数、Builder割り当て、2x建設速度、Construction Yard/Truckの混同。",
+      "main_answer": "通常Builder上限は研究で8人っぽい。Death General等で12 buildersになったという一般チャット情報あり。2x Building Speedは残り時間が単純に2倍で減るのではなく、建物が50%完成状態で開始する挙動という報告がある。Construction Yardは通常建設短縮ではなく、占領地防衛構築系の特殊用途っぽい。",
+      "other_opinions": "Builder数の反映バグ、複数Builderが完全な人数倍率にならない問題、Builder Control Buildingの効果など未確定が多い。",
+      "examples": [
+        [
+          "What is the max builders without gamepass?",
+          "GamepassなしでBuilderの最大数はいくつですか？"
+        ],
+        [
+          "Does 2x Building Speed actually work?",
+          "2x Building Speedは本当に機能していますか？"
+        ]
+      ],
+      "count_total": 154,
+      "count_qa": 97,
+      "count_general": 57,
+      "date_counts": {
+        "2026-06-16": 2,
+        "2026-06-21": 1,
+        "2026-06-22": 7,
+        "2026-06-23": 3,
+        "2026-06-24": 2,
+        "2026-06-25": 1,
+        "2026-06-26": 6,
+        "2026-06-27": 2,
+        "2026-06-28": 1,
+        "2026-06-29": 4,
+        "2026-07-02": 1,
+        "2026-07-03": 1,
+        "2026-07-04": 3,
+        "2026-07-05": 4,
+        "2026-07-06": 3,
+        "2026-07-07": 4,
+        "2026-07-08": 6,
+        "2026-07-10": 5,
+        "2026-07-11": 13,
+        "2026-07-12": 25,
+        "2026-07-13": 37,
+        "2026-07-14": 21,
+        "2026-07-15": 2
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-13",
+          "count": 37
+        },
+        {
+          "date": "2026-07-12",
+          "count": 25
+        },
+        {
+          "date": "2026-07-14",
+          "count": 21
+        }
+      ],
+      "raw_examples": [
+        "How do I get more builders",
+        "How do I get more builders research tree max 8 builders",
+        "Is the builders build speed multiplicative with the the 2x buff",
+        "how do i get my construction thingy to build those missles turrets",
+        "how to control this ? Just like how you select what army you want to attack the target base should be an option for the construction vehicle",
+        "Just like how you select what army you want to attack the target base should be an option for the construction vehicle but I can't select it",
+        "an someone help me i just got the new research control constuctions but how does it work Thats only for the builder truck",
+        "Thank you but whats the Name of it and how much Gens ? Construction yard it scales with every buy"
+      ]
+    },
+    {
+      "id": "gem_mine",
+      "title": "Gem Mine / Gem Drill / Gem収益",
+      "group": "Farm",
+      "confidence": "中",
+      "patterns": [
+        "\\b(gem mine|gem mines|gem farm|gem farms|gem drill|diamond drill|gem generator|gems per|produce.*gem|gem miners|more gems|how many gem)\\b"
+      ],
+      "summary": "Gem生産量、Gem Mineを何個買うか、研究・Worker Statue・Super Workerによる差。",
+      "main_answer": "Gem Mine/Drillは最重要投資扱い。過去回答ではGem Drillは研究なし約8 gems/h、研究あり約16 gems/h、V2 Worker Statue込み約20 gems/hという説明。Gem Mineはまず20個程度を目指すという意見もある。",
+      "other_opinions": "4 gems/8 gemsなど生産量報告に差があり、Research、Worker Statue、Super Worker、アップデート差の影響が疑われる。正確値は曖昧。",
+      "examples": [
+        [
+          "How many gems does a Gem Drill produce per hour?",
+          "Gem Drillは1時間に何個Gemを生産しますか？"
+        ],
+        [
+          "When should I stop buying Gem Mines?",
+          "Gem Mineは何個くらいで買うのを止めるべきですか？"
+        ]
+      ],
+      "count_total": 154,
+      "count_qa": 93,
+      "count_general": 61,
+      "date_counts": {
+        "2026-06-15": 3,
+        "2026-06-16": 6,
+        "2026-06-18": 2,
+        "2026-06-19": 1,
+        "2026-06-21": 2,
+        "2026-06-22": 7,
+        "2026-06-23": 4,
+        "2026-06-24": 3,
+        "2026-06-25": 2,
+        "2026-06-27": 8,
+        "2026-06-28": 1,
+        "2026-06-29": 6,
+        "2026-07-02": 2,
+        "2026-07-03": 1,
+        "2026-07-04": 4,
+        "2026-07-05": 8,
+        "2026-07-07": 2,
+        "2026-07-08": 6,
+        "2026-07-09": 2,
+        "2026-07-10": 9,
+        "2026-07-11": 2,
+        "2026-07-12": 26,
+        "2026-07-13": 13,
+        "2026-07-14": 27,
+        "2026-07-15": 7
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 27
+        },
+        {
+          "date": "2026-07-12",
+          "count": 26
+        },
+        {
+          "date": "2026-07-13",
+          "count": 13
+        }
+      ],
+      "raw_examples": [
+        "How many gems the gem drill produce every hour and 1 full day?",
+        "not really much you get only 1 gem with small chance bruh so the gem drill is the best",
+        "bruh so the gem drill is the best well the vaults chances of dropping gems is greater than transport hub, vault is like 30 gems an hour or something like that",
+        "well the vaults chances of dropping gems is greater than transport hub, vault is like 30 gems an hour or something like that thx bro but the gem drill still the king",
+        "14 gem mines can be placed near 1 worker statue v2",
+        "14 gem mines can be placed near 1 worker statue v2 v2",
+        "the gem mine produces how much",
+        "the gem mine produces how much wym prduces how much?"
+      ]
+    },
+    {
+      "id": "generals",
+      "title": "Generals / Perks / Spin / Shark Queen / Emperor系",
+      "group": "Generals",
+      "confidence": "中",
+      "patterns": [
+        "\\b(general|generals|emperor|empress|businessman|doom|death general|shark queen|nuclear general|spin|pity|perk|perks|general slots|residence)\\b"
+      ],
+      "summary": "Generalの入手、天井、Perk、組み合わせ、Shark QueenやTitan update後の新General。",
+      "main_answer": "General Spinはpity systemなし、pure luckという回答がある。Emperor/Empress/Businessman/Doom/Shark Queenなどは用途別に評価。金策ならBusinessmanやDoom、軍事/特殊効果なら他Generalという相談が多い。Death GeneralでBuilder増加らしき話もある。",
+      "other_opinions": "個別Generalの正確な効果は画像依存・スクショ依存が多く、ログだけでは曖昧。新Generalはアップデート直後で情報が荒い。",
+      "examples": [
+        [
+          "Does the General spin have a pity system?",
+          "General Spinに天井システムはありますか？"
+        ],
+        [
+          "Should I pair Emperor with General of Doom or Empress?",
+          "EmperorにはGeneral of DoomとEmpressのどちらを組み合わせるべきですか？"
+        ]
+      ],
+      "count_total": 203,
+      "count_qa": 91,
+      "count_general": 112,
+      "date_counts": {
+        "2026-06-21": 1,
+        "2026-06-22": 2,
+        "2026-06-27": 1,
+        "2026-06-28": 8,
+        "2026-06-29": 8,
+        "2026-06-30": 3,
+        "2026-07-01": 1,
+        "2026-07-02": 2,
+        "2026-07-03": 6,
+        "2026-07-04": 9,
+        "2026-07-06": 5,
+        "2026-07-07": 2,
+        "2026-07-08": 8,
+        "2026-07-09": 2,
+        "2026-07-10": 1,
+        "2026-07-11": 8,
+        "2026-07-12": 54,
+        "2026-07-13": 50,
+        "2026-07-14": 27,
+        "2026-07-15": 5
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 54
+        },
+        {
+          "date": "2026-07-13",
+          "count": 50
+        },
+        {
+          "date": "2026-07-14",
+          "count": 27
+        }
+      ],
+      "raw_examples": [
+        "What does general base do is it strong?",
+        "why do u need more civilians in general",
+        "why do u need more civilians in general X2 civilians means x2 more factory potential",
+        "It gives one more then before One more resource to crop farms or factory’s in general, Ik what the description says and that’s the problem",
+        "how u get general building",
+        "I have the best general but their is 2 slits one is locked how do i get it ???",
+        "where is residence",
+        "How do I unlock the locked general roll slot?"
+      ]
+    },
+    {
+      "id": "transport_trade",
+      "title": "Transport Pad / Trade / Gift / Alliance",
+      "group": "交流・取引",
+      "confidence": "中",
+      "patterns": [
+        "\\b(transport pad|transport|trade|trading|gift|give stuff|give buildings|give bases|ally|allies|alliance|supernova charges|contribute)\\b"
+      ],
+      "summary": "直接ギフト・取引可否、Transport Padでの同盟交換。",
+      "main_answer": "建物や基地を直接渡すことはできないという回答。TradeはTransport PadとAllyを使った素材/資源交換的なものとして語られる。",
+      "other_opinions": "Trade機能そのものの今後追加やClanへのcontributeはアップデートごとに変わる可能性。",
+      "examples": [
+        [
+          "Can I give buildings to another player?",
+          "他のプレイヤーに建物を渡せますか？"
+        ],
+        [
+          "How do I use Transport Pad with allies?",
+          "同盟相手とTransport Padをどう使いますか？"
+        ]
+      ],
+      "count_total": 111,
+      "count_qa": 74,
+      "count_general": 37,
+      "date_counts": {
+        "2026-06-17": 1,
+        "2026-06-19": 1,
+        "2026-06-21": 3,
+        "2026-06-22": 4,
+        "2026-06-23": 1,
+        "2026-06-24": 1,
+        "2026-06-25": 3,
+        "2026-06-26": 3,
+        "2026-06-27": 1,
+        "2026-06-29": 4,
+        "2026-06-30": 2,
+        "2026-07-01": 10,
+        "2026-07-02": 2,
+        "2026-07-04": 2,
+        "2026-07-05": 4,
+        "2026-07-06": 7,
+        "2026-07-07": 10,
+        "2026-07-08": 4,
+        "2026-07-10": 4,
+        "2026-07-12": 5,
+        "2026-07-13": 16,
+        "2026-07-14": 20,
+        "2026-07-15": 3
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 20
+        },
+        {
+          "date": "2026-07-13",
+          "count": 16
+        },
+        {
+          "date": "2026-07-01",
+          "count": 10
+        }
+      ],
+      "raw_examples": [
+        "hey does any one wanna transport alliy with me cause i need gems",
+        "Is transport pad usefull",
+        "When trade will add",
+        "umm guys, anyone know how this works your ally must also have that same structure i think",
+        "What sort of resouces does the transport yard trade?",
+        "how do i use the transport pad",
+        "How can I send someone a transport pad and what does the other player need to have for me to send it",
+        "How hork traidig No trading in the game"
+      ]
+    },
+    {
+      "id": "bugs",
+      "title": "バグ・不具合・反映されない問題",
+      "group": "不具合",
+      "confidence": "低",
+      "patterns": [
+        "\\b(bug|glitch|not working|doesnt work|doesn\\'t work|wont let|can\\'t|cant|crash|fix|please fix|not load|leaderboard not working|not give me|expired)\\b"
+      ],
+      "summary": "Clan、Flag、購入、Builder、Research、クラッシュなどの不具合報告。",
+      "main_answer": "多くは公式報告/チケット推奨。ログだけではユーザー側で直せないものが多い。再参加・待つ・公式Discordで報告の流れ。",
+      "other_opinions": "一般チャットには愚痴や誤解も混ざるため、再現条件つきで扱う必要がある。",
+      "examples": [
+        [
+          "Why can I not join any clan?",
+          "なぜどのClanにも参加できないのですか？"
+        ],
+        [
+          "Why is my custom flag not loading?",
+          "Custom Flagが反映されないのはなぜですか？"
+        ]
+      ],
+      "count_total": 147,
+      "count_qa": 71,
+      "count_general": 76,
+      "date_counts": {
+        "2026-06-15": 1,
+        "2026-06-16": 1,
+        "2026-06-18": 2,
+        "2026-06-19": 2,
+        "2026-06-20": 1,
+        "2026-06-22": 1,
+        "2026-06-23": 3,
+        "2026-06-24": 3,
+        "2026-06-26": 3,
+        "2026-06-28": 6,
+        "2026-06-29": 1,
+        "2026-06-30": 2,
+        "2026-07-01": 11,
+        "2026-07-02": 1,
+        "2026-07-03": 1,
+        "2026-07-04": 6,
+        "2026-07-05": 16,
+        "2026-07-08": 3,
+        "2026-07-09": 2,
+        "2026-07-11": 1,
+        "2026-07-12": 20,
+        "2026-07-13": 27,
+        "2026-07-14": 33
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 33
+        },
+        {
+          "date": "2026-07-13",
+          "count": 27
+        },
+        {
+          "date": "2026-07-12",
+          "count": 20
+        }
+      ],
+      "raw_examples": [
+        "You probaly alr got too many areas It was a glitch I can buy more area now",
+        "Should I buy the clone facility or the clone facility v2 because I have non of them and rn I have 900 gems should I wait for v2? you cant buy v2 if you have not v1",
+        "Bug How do I fix it do I restart the game?",
+        "How do I fix it do I restart the game? It will fix itself",
+        "Yo does anyone know how to macro like your farms? Or like u can’t do that Cant do that, just but autocollect",
+        "i cant seem to get enough gems how can i egt more with less tah 100 gems",
+        "Im on ps5 and I can't figure out how to inspect my buildings, can anyone help? Google says hover over them with the cursor but nothing comes up with that",
+        "but I can't select it Als you dont give them a tab as it isnd army they get their own tab instandly"
+      ]
+    },
+    {
+      "id": "rocket_missile",
+      "title": "Rocket / Missile / Nuke / Orbital Laser",
+      "group": "Military",
+      "confidence": "中",
+      "patterns": [
+        "\\b(rocket|missile|nuke|nuclear|orbital laser|bio rocket|bio missile|rocket pad|missile launcher|rocket bunker|toxic nuke)\\b"
+      ],
+      "summary": "Rocket Pad、Missile Launcher、Bio Rocket、Nuke、Orbital Laserなど。",
+      "main_answer": "Rocket PadはMissile Launcherより良いという回答あり。Rocket TankはCamo Tankより評価高め。Bio/Nuke/Orbital Laser系は高級・イベント・終盤寄り。",
+      "other_opinions": "ロケット系は更新や研究依存が大きく、単純な最強比較は曖昧。",
+      "examples": [
+        [
+          "What is better, Rocket Pad or Missile Launcher?",
+          "Rocket PadとMissile Launcherはどちらが良いですか？"
+        ],
+        [
+          "Bio Rocket or 9 missiles?",
+          "Bio Rocketとミサイル9個ならどちらが良いですか？"
+        ]
+      ],
+      "count_total": 90,
+      "count_qa": 64,
+      "count_general": 26,
+      "date_counts": {
+        "2026-06-16": 1,
+        "2026-06-17": 1,
+        "2026-06-20": 1,
+        "2026-06-22": 8,
+        "2026-06-23": 3,
+        "2026-06-24": 8,
+        "2026-06-25": 4,
+        "2026-06-26": 2,
+        "2026-06-27": 1,
+        "2026-06-28": 2,
+        "2026-07-01": 4,
+        "2026-07-02": 4,
+        "2026-07-03": 2,
+        "2026-07-04": 2,
+        "2026-07-05": 7,
+        "2026-07-06": 3,
+        "2026-07-07": 3,
+        "2026-07-08": 1,
+        "2026-07-10": 1,
+        "2026-07-12": 5,
+        "2026-07-13": 17,
+        "2026-07-14": 10
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-13",
+          "count": 17
+        },
+        {
+          "date": "2026-07-14",
+          "count": 10
+        },
+        {
+          "date": "2026-06-22",
+          "count": 8
+        }
+      ],
+      "raw_examples": [
+        "Why does it not let me open the nuclear crate",
+        "how do i launch the rocket?",
+        "max amount of misile launchers, i have 3 only, how do u upgrade more? u have to reasearch the max one more missile launcher one to have 4 ofthem",
+        "Ye I was in the same situation, I kept them until I had full nuclear rest for hey can u help with my problem up there?",
+        "What are the new limiteds in the nuclear crate?",
+        "What are the new limiteds in the nuclear crate? 1 is a litteral nuke dealing 1000 dam every 75 sec 2 is a structure to make ur contruction vehicles work 2x the speed",
+        "Is rocket pad or missile launcher better?",
+        "Is rocket pad or missile launcher better? I’d say rocket pad cause it’s 9 missles that do 100 ish damage if I’m not mistaken"
+      ]
+    },
+    {
+      "id": "building_effects",
+      "title": "特殊建物の効果：Pentagon / Vault / Mega Drill / Robo Lab など",
+      "group": "建物効果",
+      "confidence": "低",
+      "patterns": [
+        "\\b(pentagon|vault|mega drill|robo lab|robo head|area-51|area 51|prototype barracks|prototype citadel|black hole generator|titan workshop|titan base|titan crate|quantum core|bio missile)\\b"
+      ],
+      "summary": "レア/Secret/Prototype/Titan系など個別建物の効果確認。",
+      "main_answer": "Vaultは装甲車を占領基地に送り少量資源/Gemを回収するSecret建物。Mega DrillはOil生産だが評価は低め。PentagonはB2/F22またはB2複数を出すと言われるが、B2低評価のため建物評価も低い。Robo Labは売却できるRobo Headsを生産する。Titan系は強いがTitan crate/課金感が強い。",
+      "other_opinions": "Pentagonのスポーン数やPrototype/Titan系の正確な性能は回答がばらつく。画像依存の「これ何？」も多い。",
+      "examples": [
+        [
+          "What does Mega Drill do?",
+          "Mega Drillは何をする建物ですか？"
+        ],
+        [
+          "Is Pentagon good?",
+          "Pentagonは強いですか？"
+        ]
+      ],
+      "count_total": 105,
+      "count_qa": 61,
+      "count_general": 44,
+      "date_counts": {
+        "2026-06-16": 2,
+        "2026-06-17": 2,
+        "2026-06-20": 4,
+        "2026-06-21": 1,
+        "2026-06-22": 1,
+        "2026-06-24": 1,
+        "2026-06-25": 3,
+        "2026-06-26": 1,
+        "2026-06-30": 5,
+        "2026-07-02": 4,
+        "2026-07-03": 2,
+        "2026-07-04": 3,
+        "2026-07-05": 9,
+        "2026-07-06": 8,
+        "2026-07-07": 1,
+        "2026-07-08": 5,
+        "2026-07-09": 5,
+        "2026-07-10": 1,
+        "2026-07-11": 1,
+        "2026-07-12": 21,
+        "2026-07-13": 16,
+        "2026-07-14": 7,
+        "2026-07-15": 2
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 21
+        },
+        {
+          "date": "2026-07-13",
+          "count": 16
+        },
+        {
+          "date": "2026-07-05",
+          "count": 9
+        }
+      ],
+      "raw_examples": [
+        "rough estimate based on what i js collected from my vault",
+        "what can vault do?",
+        "what does the pentagon do?",
+        "what does the pentagon do? Stupid, unthoughtful, insincere, uncreative, a mix of rare and useless, made with zero thought type of hell hole that's an insult to players.",
+        "hi i was wondering what a mega drill does?",
+        "how did i get a pentagon and is it good?",
+        "how i can get the bio missile",
+        "How to get a pentagon"
+      ]
+    },
+    {
+      "id": "auto_buy",
+      "title": "Auto Buy / Shopping Center / Auto Collect / Auto Sell",
+      "group": "自動化",
+      "confidence": "中",
+      "patterns": [
+        "\\b(auto buy|shopping center|auto collect|auto sell|auto conquer|filter|offline.*buy|buys.*offline|autosell)\\b"
+      ],
+      "summary": "自動購入・自動回収・自動売却の仕組み、オフライン可否。",
+      "main_answer": "Auto Buy / Shopping Centerはオフラインでは動かないという回答が多い。対象をGemで解放し、オンライン中に買う機能として理解されている。Auto CollectはAuto Sellより価値が高いという意見が複数。",
       "other_opinions": "一部「オフライン中に買えた気がする」という発言もあるが、ラグ/勘違い/仕様変更の可能性がある。Auto Sellの最適%は進行度で変わる。",
       "examples": [
         [
