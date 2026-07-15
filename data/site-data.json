@@ -1,0 +1,1052 @@
+{
+  "generated_at": "2026-07-16 JST",
+  "title": "Mini War Discord QA Knowledge Base",
+  "description": "Discord QAログと一般チャットログから抽出したMini Warの質問・回答・傾向まとめ。回答の確度が低いものは明示しています。",
+  "sources": [
+    {
+      "id": "qa-2026-06-15_07-07",
+      "type": "QA",
+      "filename": "discord-log-analysis.txt",
+      "messages": 4430,
+      "oldest": "2026-06-15 08:49:11",
+      "newest": "2026-07-07 21:57:15"
+    },
+    {
+      "id": "qa-2026-07-07_07-14",
+      "type": "QA",
+      "filename": "discord-log-analysis (1).txt",
+      "messages": 2044,
+      "oldest": "2026-07-07 21:25:51",
+      "newest": "2026-07-14 23:11:14"
+    },
+    {
+      "id": "general-2026-07-12_07-15",
+      "type": "一般チャット",
+      "filename": "discord-log-analysis (2).txt",
+      "messages": 10640,
+      "oldest": "2026-07-12 00:35:59",
+      "newest": "2026-07-15 03:07:29"
+    }
+  ],
+  "stats": {
+    "total_messages": 17114,
+    "question_candidates": 8084,
+    "classified_questions": 4699,
+    "uncategorized_questions": 3385,
+    "categories": 24,
+    "qa_messages": 6474,
+    "general_messages": 10640
+  },
+  "categories": [
+    {
+      "id": "military_compare",
+      "title": "軍事構成・ユニット比較・おすすめ",
+      "group": "Military",
+      "confidence": "中",
+      "patterns": [
+        "\\b(army setup|military|black hawk|blackhawk|artillery|air fortress|spider|b2|prototype heli|advanced heli|rocket tank|camo tank|air base|artillery depot|best air|best military|stronger|troops|unit|units|army better|replace.*hawk|replace.*b2)\\b"
+      ],
+      "summary": "Air Fortress、Spider、Black Hawk、Artillery、B2、Rocket/Camo Tankなどの強さ比較。最頻出カテゴリ。",
+      "main_answer": "Air Fortressは空中ユニット最上位扱い。Spider/Spider Baseも最上位級。Black Hawkは評価高めで、B2は低評価が目立つ。Artilleryは火力寄り、Black Hawkは速度寄りとされる。弱い軍事建物を残しすぎるとスポーン枠を埋め、強いユニットが出にくくなるという意見が強い。",
+      "other_opinions": "「強いユニットが優先スポーンする」という意見もあり、スポーン仕様は完全には一致していない。DPS/HPの正確な数値比較はログ内では不足。",
+      "examples": [
+        [
+          "Which is better for late game military: Spider Base or Air Fortress?",
+          "終盤の軍事ではSpider BaseとAir Fortressのどちらが強いですか？"
+        ],
+        [
+          "Should I remove weaker military buildings so stronger units spawn more consistently?",
+          "強いユニットを安定して出すため、弱い軍事建物は消すべきですか？"
+        ]
+      ],
+      "count_total": 462,
+      "count_qa": 308,
+      "count_general": 154,
+      "date_counts": {
+        "2026-06-15": 1,
+        "2026-06-16": 3,
+        "2026-06-17": 4,
+        "2026-06-18": 1,
+        "2026-06-19": 11,
+        "2026-06-20": 3,
+        "2026-06-21": 6,
+        "2026-06-22": 3,
+        "2026-06-23": 3,
+        "2026-06-24": 10,
+        "2026-06-25": 8,
+        "2026-06-26": 20,
+        "2026-06-27": 4,
+        "2026-06-28": 3,
+        "2026-06-29": 10,
+        "2026-06-30": 7,
+        "2026-07-01": 8,
+        "2026-07-02": 9,
+        "2026-07-03": 14,
+        "2026-07-04": 25,
+        "2026-07-05": 20,
+        "2026-07-06": 17,
+        "2026-07-07": 17,
+        "2026-07-08": 27,
+        "2026-07-09": 18,
+        "2026-07-10": 14,
+        "2026-07-11": 6,
+        "2026-07-12": 71,
+        "2026-07-13": 51,
+        "2026-07-14": 50,
+        "2026-07-15": 18
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 71
+        },
+        {
+          "date": "2026-07-13",
+          "count": 51
+        },
+        {
+          "date": "2026-07-14",
+          "count": 50
+        }
+      ],
+      "raw_examples": [
+        "there is factory houses military special",
+        "Delete old buildings, the 35/35 limit exist for a reason. Different troops take up their own respective pts, like how B2s take ~2pts for one unit. Ye but if I delete them I lose strength",
+        "Delete old buildings, the 35/35 limit exist for a reason. Different troops take up their own respective pts, like how B2s take ~2pts for one unit. Yea figured it out appreciate it bro",
+        "Do I understand correctly that the more expensive a military building is, the more power points it gives?",
+        "how does the military work?",
+        "What does the black helicopter from the advanced heli pad do?",
+        "What military should I priotize for mythic",
+        "By being online in a public server? Do I need to hold the city or any enemy units?"
+      ]
+    },
+    {
+      "id": "farm_progress",
+      "title": "Farm構成・金策・進行相談",
+      "group": "Farm",
+      "confidence": "中",
+      "patterns": [
+        "\\b(farm|money|cash|rich|generator|data center|nuclear reactor|area 51|antimatter|black hole|quantum|dark matter|gold cave|bank|best thing|what should i buy|what should i get|progress|make money|money generator)\\b"
+      ],
+      "summary": "Farm視点の構成改善、次に何を買うか、金策施設の移行順。",
+      "main_answer": "序盤〜中盤はData CenterやBank系、後半はArea 51、Black Hole、Antimatter、Clone系へ移行する流れが多い。基本は「資金・Builder拘束が重すぎない範囲で上位Farmへ置き換える」。弱いFarmを残すとCivilianやスペース効率が悪くなる。",
+      "other_opinions": "進行度により回答がかなり変わるため、所持金・Gem・研究・Builder数・現在の生産施設を添えて質問するのが有効。",
+      "examples": [
+        [
+          "Can I get advice on my setup from both Farm and Military perspectives?",
+          "Farm面とMilitary面の両方から構成アドバイスをもらえますか？"
+        ],
+        [
+          "Should I research Area 51 first and then buy Antimatter?",
+          "先にArea 51を研究して稼ぎ、その後Antimatterを買うべきですか？"
+        ]
+      ],
+      "count_total": 428,
+      "count_qa": 241,
+      "count_general": 187,
+      "date_counts": {
+        "2026-06-16": 7,
+        "2026-06-18": 2,
+        "2026-06-19": 3,
+        "2026-06-20": 1,
+        "2026-06-21": 8,
+        "2026-06-22": 2,
+        "2026-06-23": 3,
+        "2026-06-24": 4,
+        "2026-06-25": 9,
+        "2026-06-26": 11,
+        "2026-06-27": 11,
+        "2026-06-28": 5,
+        "2026-06-29": 3,
+        "2026-06-30": 3,
+        "2026-07-01": 6,
+        "2026-07-02": 7,
+        "2026-07-03": 10,
+        "2026-07-04": 22,
+        "2026-07-05": 19,
+        "2026-07-06": 13,
+        "2026-07-07": 16,
+        "2026-07-08": 11,
+        "2026-07-09": 5,
+        "2026-07-10": 5,
+        "2026-07-11": 5,
+        "2026-07-12": 87,
+        "2026-07-13": 62,
+        "2026-07-14": 70,
+        "2026-07-15": 18
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 87
+        },
+        {
+          "date": "2026-07-14",
+          "count": 70
+        },
+        {
+          "date": "2026-07-13",
+          "count": 62
+        }
+      ],
+      "raw_examples": [
+        "how much gems you can get from vaults and how much money",
+        "how much gems you can get from vaults and how much money not really much you get only 1 gem with small chance",
+        "how to make a lot of money Sorry im use translator",
+        "how to make a lot of money Sorry im use translator ☠️ this is hard question",
+        "auto sell is useless nah just activate 20% and you make enough money without always running around",
+        "can anyone ping me when black hole comes in stock.",
+        "can anyone ping me when black hole comes in stock. each person's stock is different",
+        "how to get money fast?"
+      ]
+    },
+    {
+      "id": "offline_afk",
+      "title": "オフライン収益・AFK・ナーフ疑惑",
+      "group": "Farm",
+      "confidence": "低",
+      "patterns": [
+        "\\b(offline|afk|auto clicker|rejoin|offline earnings|overnight|nerf|nerfed|sleep|laggy device)\\b"
+      ],
+      "summary": "7/14前後に急増したオフライン収益低下・ナーフ・バグ修正疑惑。",
+      "main_answer": "ログでは「オフライン収益が大幅に下がった」「以前の長時間オフライン収益はバグで、現在は1時間程度に制限された可能性」という見方が多い。オンラインAFKやAuto Collect、Civilian管理の重要性が上がった可能性。",
+      "other_opinions": "Gem Mine自体のナーフか、Civilian/占領地仕様の影響か、オフライン計算上限かで意見が分かれる。確定情報ではない。",
+      "examples": [
+        [
+          "Why did my offline earnings get so low?",
+          "オフライン収益がこんなに低くなったのはなぜですか？"
+        ],
+        [
+          "Was offline farming nerfed or is it a bug?",
+          "オフラインFarmはナーフされたのですか？それともバグですか？"
+        ]
+      ],
+      "count_total": 474,
+      "count_qa": 204,
+      "count_general": 270,
+      "date_counts": {
+        "2026-06-15": 1,
+        "2026-06-17": 2,
+        "2026-06-20": 1,
+        "2026-06-22": 5,
+        "2026-06-23": 2,
+        "2026-06-25": 13,
+        "2026-06-26": 2,
+        "2026-06-27": 1,
+        "2026-06-28": 8,
+        "2026-06-29": 2,
+        "2026-06-30": 2,
+        "2026-07-01": 4,
+        "2026-07-02": 1,
+        "2026-07-03": 1,
+        "2026-07-04": 18,
+        "2026-07-05": 25,
+        "2026-07-06": 7,
+        "2026-07-07": 7,
+        "2026-07-08": 4,
+        "2026-07-09": 6,
+        "2026-07-10": 6,
+        "2026-07-11": 7,
+        "2026-07-12": 66,
+        "2026-07-13": 83,
+        "2026-07-14": 181,
+        "2026-07-15": 19
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 181
+        },
+        {
+          "date": "2026-07-13",
+          "count": 83
+        },
+        {
+          "date": "2026-07-12",
+          "count": 66
+        }
+      ],
+      "raw_examples": [
+        "And does auto collect/sell works offline too?",
+        "Go to shop put your mouse on the item you want and then put an auto clicker and do this everytime your afk",
+        "my country does not work offline",
+        "do they work while afk",
+        "do they work while afk Yes they do",
+        "When offline do the mimic resource base still give offline value or just the actual resource base itself?",
+        "I can’t afk so took me like",
+        "If you afk I think you can do it quick"
+      ]
+    },
+    {
+      "id": "codes",
+      "title": "コード／報酬コード／Golden Egg",
+      "group": "運営・イベント",
+      "confidence": "中",
+      "patterns": [
+        "\\b(code|codes|new code|active code|magic code|golden egg|red buttons|button hunt|expired)\\b",
+        "tungtung",
+        "miniwar",
+        "generals",
+        "nolagplz"
+      ],
+      "summary": "有効コード、コード入力場所、Golden Egg/隠しボタン由来コード、expired表示の話題。更新直後に急増。",
+      "main_answer": "ログでは MINIWAR / GENERALS / NOLAGPLZ / tungtungsahur などが言及される。tungtungsahur は7/12更新直後に大量投稿され、報酬は67 gems / 6.7k cash程度という声が多い。Golden Egg由来のDISCODOG系コードはexpired報告があり、バグ扱いで公式報告推奨。現在も有効かはログだけでは保証できない。",
+      "other_opinions": "「報酬が弱い」「コードがすぐ上限に達した」「2つ目のコードがあるのでは」という混乱あり。",
+      "examples": [
+        [
+          "What are the active codes or where can I find them?",
+          "有効なコードは何ですか？どこで見つけられますか？"
+        ],
+        [
+          "Why does my Golden Egg code say expired?",
+          "Golden Eggのコードがexpiredになるのはなぜですか？"
+        ]
+      ],
+      "count_total": 776,
+      "count_qa": 179,
+      "count_general": 597,
+      "date_counts": {
+        "2026-06-21": 24,
+        "2026-06-22": 4,
+        "2026-06-23": 1,
+        "2026-06-25": 2,
+        "2026-06-26": 2,
+        "2026-06-28": 17,
+        "2026-06-29": 2,
+        "2026-06-30": 36,
+        "2026-07-02": 2,
+        "2026-07-04": 1,
+        "2026-07-05": 18,
+        "2026-07-06": 11,
+        "2026-07-07": 7,
+        "2026-07-08": 1,
+        "2026-07-09": 5,
+        "2026-07-10": 8,
+        "2026-07-11": 3,
+        "2026-07-12": 518,
+        "2026-07-13": 44,
+        "2026-07-14": 23,
+        "2026-07-15": 47
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 518
+        },
+        {
+          "date": "2026-07-15",
+          "count": 47
+        },
+        {
+          "date": "2026-07-13",
+          "count": 44
+        }
+      ],
+      "raw_examples": [
+        "what are the codes?",
+        "A terrible code which is MINIWAR",
+        "Anyone know what the new codes are",
+        "what are the new codes",
+        "Codes???",
+        "Where are the codes for rewards?",
+        "Where are the codes for rewards? Yeah I got the samw question...",
+        "Where are the codes for rewards? MINIWAR is code @The_Future_Guy 🙈"
+      ]
+    },
+    {
+      "id": "clan",
+      "title": "Clan作成・参加・Power/Strength・Trophy・Clan報酬",
+      "group": "Clan",
+      "confidence": "中",
+      "patterns": [
+        "\\b(clan|strength|power|troph|trophy|trophies|clan hub|clan chest|clan bank|clan quest|clan limit|join.*clan|create.*clan)\\b"
+      ],
+      "summary": "Clan Hub、参加/作成、Power確認、Clan Trophy、Clan報酬、メンバー上限。",
+      "main_answer": "Clan HubはResearch後にShopのSpecial tabで購入し、建設して作成/参加する流れ。Strength/PowerはClan関連画面または設定画面で確認できるという回答が複数。ClanはQuest報酬がある。",
+      "other_opinions": "Clan Trophyの取得条件、メンバー上限の拡張条件、Clan Chest報酬の受け取りは回答が揺れる。Clan削除・参加不可バグも複数。",
+      "examples": [
+        [
+          "How do I join or create a clan?",
+          "Clanにはどう参加・作成しますか？"
+        ],
+        [
+          "How do I check my strength or power?",
+          "自分のStrength/Powerはどう確認しますか？"
+        ]
+      ],
+      "count_total": 358,
+      "count_qa": 173,
+      "count_general": 185,
+      "date_counts": {
+        "2026-06-15": 7,
+        "2026-06-16": 14,
+        "2026-06-17": 4,
+        "2026-06-18": 7,
+        "2026-06-19": 5,
+        "2026-06-20": 4,
+        "2026-06-21": 6,
+        "2026-06-22": 8,
+        "2026-06-23": 5,
+        "2026-06-24": 8,
+        "2026-06-25": 3,
+        "2026-06-26": 4,
+        "2026-06-27": 4,
+        "2026-06-28": 8,
+        "2026-06-30": 1,
+        "2026-07-01": 1,
+        "2026-07-02": 3,
+        "2026-07-03": 2,
+        "2026-07-04": 2,
+        "2026-07-05": 10,
+        "2026-07-06": 8,
+        "2026-07-07": 2,
+        "2026-07-08": 9,
+        "2026-07-09": 7,
+        "2026-07-10": 2,
+        "2026-07-11": 12,
+        "2026-07-12": 107,
+        "2026-07-13": 60,
+        "2026-07-14": 39,
+        "2026-07-15": 6
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 107
+        },
+        {
+          "date": "2026-07-13",
+          "count": 60
+        },
+        {
+          "date": "2026-07-14",
+          "count": 39
+        }
+      ],
+      "raw_examples": [
+        "Why was my clan deleted? I hope they fix it and that everyone whose clan was deleted gets their gems back or their clan restored.",
+        "how do we join or create a clan i bought it in the research",
+        "how do we join or create a clan i bought it in the research go buy it from the market",
+        "Guys quick question how can I get more strength and are clans the only way for me to see my strength?",
+        "you can get power with your army",
+        "how do we join or create a clan i bought it in the research go to special tab and buy clan hub",
+        "how to get trophies in clan system",
+        "How do you see the clan rewards?"
+      ]
+    },
+    {
+      "id": "events",
+      "title": "Events / Invasion / Weather / Admin Abuse / 通知",
+      "group": "運営・イベント",
+      "confidence": "低",
+      "patterns": [
+        "\\b(event|events|invasion|riot|raid|raids|weather|admin abuse|aa\\b|notify|notifier|nuke event|cargo event|global)\\b"
+      ],
+      "summary": "イベント発生頻度、Private Server可否、Admin Abuse、イベント通知。",
+      "main_answer": "イベントはランダムという回答が多い。Private Serverでもイベントは起きるという発言が複数。Admin Abuseはアップデート時に起きる/起きないで混乱が大きい。",
+      "other_opinions": "レイドは毎時00分/30分に発生チャンスという説明もあり、完全ランダム説と混在。通知はサーバー参加時に許可する必要があるという発言あり。",
+      "examples": [
+        [
+          "Do events happen in private servers?",
+          "イベントはPrivate Serverでも発生しますか？"
+        ],
+        [
+          "When is the next invasion event?",
+          "次のInvasionイベントはいつですか？"
+        ]
+      ],
+      "count_total": 264,
+      "count_qa": 170,
+      "count_general": 94,
+      "date_counts": {
+        "2026-06-17": 2,
+        "2026-06-18": 1,
+        "2026-06-19": 4,
+        "2026-06-20": 3,
+        "2026-06-21": 2,
+        "2026-06-22": 5,
+        "2026-06-23": 3,
+        "2026-06-24": 3,
+        "2026-06-25": 4,
+        "2026-06-26": 3,
+        "2026-06-27": 3,
+        "2026-06-28": 1,
+        "2026-06-30": 3,
+        "2026-07-01": 4,
+        "2026-07-02": 3,
+        "2026-07-03": 7,
+        "2026-07-04": 9,
+        "2026-07-05": 19,
+        "2026-07-06": 11,
+        "2026-07-07": 15,
+        "2026-07-08": 12,
+        "2026-07-09": 3,
+        "2026-07-10": 8,
+        "2026-07-11": 5,
+        "2026-07-12": 78,
+        "2026-07-13": 18,
+        "2026-07-14": 24,
+        "2026-07-15": 11
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 78
+        },
+        {
+          "date": "2026-07-14",
+          "count": 24
+        },
+        {
+          "date": "2026-07-05",
+          "count": 19
+        }
+      ],
+      "raw_examples": [
+        "How do I access stock notifier if there even is one?",
+        "How do I access stock notifier if there even is one? stock is different for everyone",
+        "how to get worker statue v2? Raids",
+        "how often are the events",
+        "Does riot raids happen randomly or is there a schedule",
+        "Does riot raids happen randomly or is there a schedule randomly",
+        "do event have sched or it's just appear randomly",
+        "If you allies captures raid boss, do you also get the reward?"
+      ]
+    },
+    {
+      "id": "super_workers",
+      "title": "Super Worker / Civilian / Houses",
+      "group": "人口・生産",
+      "confidence": "中",
+      "patterns": [
+        "\\b(super worker|super workers|civilians|civilian|max house|houses|manor|helix tower|double turbo tower|worker|0/4|4/4|population)\\b"
+      ],
+      "summary": "Super Workerの入手・割当、Civilian数、家/塔/人口上限。",
+      "main_answer": "Super Workerは建物完成時の運要素で、0/4→4/4のように任意で埋めるものではなさそう。Helix Tower以上からSuper Workerが出るという回答あり。Double Turb…7003 tokens truncated…Auto Buy / Shopping Centerはオフラインでは動かないという回答が多い。対象をGemで解放し、オンライン中に買う機能として理解されている。Auto CollectはAuto Sellより価値が高いという意見が複数。",
+      "other_opinions": "一部「オフライン中に買えた気がする」という発言もあるが、ラグ/勘違い/仕様変更の可能性がある。Auto Sellの最適%は進行度で変わる。",
+      "examples": [
+        [
+          "Does Auto Buy work offline?",
+          "Auto Buyはオフラインでも動きますか？"
+        ],
+        [
+          "What percentage should I set for Auto Sell?",
+          "Auto Sellは何%に設定すべきですか？"
+        ]
+      ],
+      "count_total": 83,
+      "count_qa": 43,
+      "count_general": 40,
+      "date_counts": {
+        "2026-06-15": 1,
+        "2026-06-16": 2,
+        "2026-06-25": 1,
+        "2026-07-04": 10,
+        "2026-07-05": 12,
+        "2026-07-06": 6,
+        "2026-07-07": 4,
+        "2026-07-11": 2,
+        "2026-07-12": 15,
+        "2026-07-13": 14,
+        "2026-07-14": 11,
+        "2026-07-15": 5
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 15
+        },
+        {
+          "date": "2026-07-13",
+          "count": 14
+        },
+        {
+          "date": "2026-07-05",
+          "count": 12
+        }
+      ],
+      "raw_examples": [
+        "What % makes the most sense for auto sell? How does the Auto sell filter works?",
+        "Is it worth activating auto-sell game pass? Or should I just keep an eye out for the 40%? auto sell is useless",
+        "auto collect is way better",
+        "Guys how does auto sell work?",
+        "but I got auto collect?",
+        "do i need magnets with auto collect?",
+        "and then turn off auto collect as soon as I get on or off?",
+        "and then turn off auto collect as soon as I get on or off? On"
+      ]
+    },
+    {
+      "id": "base_plot",
+      "title": "Base / Plot / 配置・土地拡張・操作",
+      "group": "基地管理",
+      "confidence": "中",
+      "patterns": [
+        "\\b(plot|bigger plot|last row|base layout|layout|move stuff|rotate|place|placing|too many things|messy|abomination|military in front|farms in middle|houses in back|land expanded)\\b"
+      ],
+      "summary": "基地配置、土地拡張費用、建物移動、配置がごちゃつく問題。",
+      "main_answer": "配置助言として「Militaryを前、Farmを中央、Houseを後ろ」が出ている。最後の土地拡張は非常に高額で、750Bや2T近く使ったという発言あり。",
+      "other_opinions": "配置評価は主観が強い。Discordでは雑な反応も多いので、目的（Farm効率/軍事/見た目）を明示すると良い。",
+      "examples": [
+        [
+          "Am I placing too many things?",
+          "単純に物を置きすぎていますか？"
+        ],
+        [
+          "How much does the last plot upgrade cost?",
+          "最後の土地拡張はいくらですか？"
+        ]
+      ],
+      "count_total": 56,
+      "count_qa": 41,
+      "count_general": 15,
+      "date_counts": {
+        "2026-06-21": 1,
+        "2026-06-22": 1,
+        "2026-06-23": 1,
+        "2026-06-24": 1,
+        "2026-06-28": 2,
+        "2026-07-02": 4,
+        "2026-07-04": 2,
+        "2026-07-05": 4,
+        "2026-07-06": 8,
+        "2026-07-08": 3,
+        "2026-07-09": 5,
+        "2026-07-10": 2,
+        "2026-07-11": 1,
+        "2026-07-12": 9,
+        "2026-07-13": 7,
+        "2026-07-14": 5
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 9
+        },
+        {
+          "date": "2026-07-06",
+          "count": 8
+        },
+        {
+          "date": "2026-07-13",
+          "count": 7
+        }
+      ],
+      "raw_examples": [
+        "what does \"conquer oil rig\" mean? is it a place or do i have to place the oil rig?",
+        "The game talk i don't can Take a plot",
+        "u can insta place them then",
+        "Ive got this Vorlagename but there is nothing i can place",
+        "Ive got this Vorlagename but there is nothing i can place Prob a bug",
+        "Is there a way to place down a border tower as a decoration",
+        "Is there a way to place down a border tower as a decoration i dont think so",
+        "Each time it rolls a star it gives you a super civ and that super civ gives +1 to farms per it fixed each time a house finished build so you cant reroll by remove and placing it back?"
+      ]
+    },
+    {
+      "id": "military_spawn",
+      "title": "軍事スポーン仕様・上限・出撃しない問題",
+      "group": "Military",
+      "confidence": "中",
+      "patterns": [
+        "\\b(spawn|spawning|deploy|not deploy|not spawning|max spawn|max amount of units|35/35|military limit|units not spawning|why.*units)\\b"
+      ],
+      "summary": "軍事ユニットが出ない、上限35/35、どの建物から優先して出るかの話題。",
+      "main_answer": "軍事ユニットには出撃/スポーン上限があり、上限に達すると一部ユニットが出ない。強い軍事を活かしたい場合、古い/弱い軍事建物を減らすのが無難。",
+      "other_opinions": "「better army will always spawn first」という発言もあり、優先スポーン説と枠圧迫説が混在。実測待ちの曖昧カテゴリ。",
+      "examples": [
+        [
+          "Why are some of my units not spawning?",
+          "一部のユニットがスポーンしないのはなぜですか？"
+        ],
+        [
+          "Does the game prioritize the best military buildings for spawn?",
+          "ゲームは強い軍事建物を優先してスポーンしますか？"
+        ]
+      ],
+      "count_total": 64,
+      "count_qa": 39,
+      "count_general": 25,
+      "date_counts": {
+        "2026-06-16": 2,
+        "2026-06-19": 4,
+        "2026-06-21": 3,
+        "2026-06-22": 2,
+        "2026-06-24": 6,
+        "2026-06-25": 4,
+        "2026-06-26": 2,
+        "2026-07-02": 1,
+        "2026-07-05": 3,
+        "2026-07-06": 6,
+        "2026-07-07": 1,
+        "2026-07-12": 12,
+        "2026-07-13": 2,
+        "2026-07-14": 13,
+        "2026-07-15": 3
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 13
+        },
+        {
+          "date": "2026-07-12",
+          "count": 12
+        },
+        {
+          "date": "2026-06-24",
+          "count": 6
+        }
+      ],
+      "raw_examples": [
+        "Why does my black hawks not deploy when I send my army out I only realised like a few mins ago and idk what to do",
+        "Why does my black hawks not deploy when I send my army out I only realised like a few mins ago and idk what to do ^",
+        "i bought something for my mechs could spawn faster or wtv so i iddnt have to wait 48 hours and it took my money",
+        "i bought something for my mechs could spawn faster or wtv so i iddnt have to wait 48 hours and it took my money it gives you it in a couple hours it did the same for me no worries",
+        "sheesh where did u get that and i meant like how do they spawn?",
+        "sheesh where did u get that and i meant like how do they spawn? idk i got that list from someone",
+        "Can raids spawn in private servers",
+        "Can raids spawn in private servers Yes"
+      ]
+    },
+    {
+      "id": "crates_robux",
+      "title": "Crate / Case / Robux購入・報酬未反映",
+      "group": "課金・報酬",
+      "confidence": "低",
+      "patterns": [
+        "\\b(crate|case|chest|titan crate|prototype crate|nuclear crate|classified case|robux|gamepass|2x research|2x builder|bought|purchase|not receive|giveaway)\\b"
+      ],
+      "summary": "Crate/Caseの中身、Titan crate価格、Robux購入反映、2x系gamepassの効き。",
+      "main_answer": "Titan crateはRobux購入の話が多く、価格は289/399など発言が割れる。2x Building/Researchが効かないように見える報告が複数。購入未反映は公式に報告すべきという流れ。",
+      "other_opinions": "一般チャットではP2W感への不満が強い。Crate内容は画像依存でログだけでは不足。",
+      "examples": [
+        [
+          "How much does the Titan Crate cost in shop?",
+          "ShopのTitan Crateはいくらですか？"
+        ],
+        [
+          "I paid Robux but did not receive the item. What should I do?",
+          "Robuxを払ったのにアイテムが反映されません。どうすればいいですか？"
+        ]
+      ],
+      "count_total": 91,
+      "count_qa": 35,
+      "count_general": 56,
+      "date_counts": {
+        "2026-06-19": 1,
+        "2026-06-20": 1,
+        "2026-06-22": 1,
+        "2026-06-24": 1,
+        "2026-06-25": 2,
+        "2026-06-26": 3,
+        "2026-06-27": 2,
+        "2026-06-28": 3,
+        "2026-07-03": 1,
+        "2026-07-04": 3,
+        "2026-07-05": 6,
+        "2026-07-06": 1,
+        "2026-07-07": 2,
+        "2026-07-10": 2,
+        "2026-07-12": 28,
+        "2026-07-13": 21,
+        "2026-07-14": 9,
+        "2026-07-15": 4
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 28
+        },
+        {
+          "date": "2026-07-13",
+          "count": 21
+        },
+        {
+          "date": "2026-07-14",
+          "count": 9
+        }
+      ],
+      "raw_examples": [
+        "since i just bought another one i wanna ask if they can use it on that one",
+        "Can anyone tell me what u even get from this crate?",
+        "Gamepass?",
+        "↪ [返信元未取得] Gems can only be gifted with robux by other players",
+        "It would be a gamepass if it was a permanent thing",
+        "And ur not worried on accidentally spending robux if u go broke and it tries buying it? Lol it doesnt spend robux, at least mine never brought that up",
+        "how do i get a diffrent flag? You get the flag gamepass in the 7th day in the daily join in",
+        "Ohh I get what you mean, well at least it was a few robux I wasted Yeah mb for the bad explanation"
+      ]
+    },
+    {
+      "id": "servers",
+      "title": "Private Server / Pro Server / データ保存 / 公式Discord",
+      "group": "サーバー",
+      "confidence": "中",
+      "patterns": [
+        "\\b(private server|vip server|pro server|normal server|official server|discord server|data saves|save in private|join normal|server hop)\\b"
+      ],
+      "summary": "Pro Serverに飛ばされる問題、Private Serverの利点、データ保存、公式Discord。",
+      "main_answer": "Private Serverは競争相手が少なく楽という意見が多い。データ（お金や進行）は保存されるが、占領基地はサーバー移動で維持されないという会話あり。Pro Serverに自動で飛ばされる不満が多い。",
+      "other_opinions": "Normal Serverへの戻り方は低進行の友人に参加するなど非公式回避策が多く、正式仕様は不明。",
+      "examples": [
+        [
+          "Does data save in a private server?",
+          "Private Serverでもデータは保存されますか？"
+        ],
+        [
+          "Why am I joining Pro Servers and how do I join normal ones?",
+          "なぜPro Serverに飛ばされるのですか？普通のサーバーに戻るには？"
+        ]
+      ],
+      "count_total": 78,
+      "count_qa": 25,
+      "count_general": 53,
+      "date_counts": {
+        "2026-06-24": 2,
+        "2026-06-25": 4,
+        "2026-07-01": 1,
+        "2026-07-05": 1,
+        "2026-07-06": 1,
+        "2026-07-08": 1,
+        "2026-07-09": 2,
+        "2026-07-11": 3,
+        "2026-07-12": 27,
+        "2026-07-13": 23,
+        "2026-07-14": 12,
+        "2026-07-15": 1
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 27
+        },
+        {
+          "date": "2026-07-13",
+          "count": 23
+        },
+        {
+          "date": "2026-07-14",
+          "count": 12
+        }
+      ],
+      "raw_examples": [
+        "If anyone have private server so tell me",
+        "If anyone have private server so tell me I have but can't join game :v",
+        "how do i know what my level is in this discord server",
+        "how do i know what my level is in this discord server Easy look next to ur name the icon tap it or go to #channel:1515342981413208194 and type /level",
+        "Private server is op",
+        "Private server is op Yep",
+        "i leave to one min and i tray to retern to the game and i dont found but i try in another accont and i can what the broblem i will send you the link of the official server in private",
+        "Can someone send me the link to the official server?"
+      ]
+    },
+    {
+      "id": "beginner",
+      "title": "初心者・基本操作・Misc",
+      "group": "その他",
+      "confidence": "低",
+      "patterns": [
+        "\\b(new to game|started playing|what do i do|help me get started|tutorial|where do i put|how do i access|inspect|ps5|console|what is this|what does this mean|anyone know what this is)\\b"
+      ],
+      "summary": "初心者の進行、基本操作、PS5/console操作、画像依存の質問。",
+      "main_answer": "序盤はFarm強化、研究、Gem Mine、上位軍事へ進む。PS5でinspectできないなど操作系は回答が弱い。画像依存の「これは何？」はログでは[no text]になっていることが多く判定困難。",
+      "other_opinions": "このカテゴリはノイズが多いので、サイトでは低確度扱い。",
+      "examples": [
+        [
+          "I skipped the tutorial. What should I do?",
+          "チュートリアルを飛ばしました。何をすればいいですか？"
+        ],
+        [
+          "What is this building?",
+          "この建物は何ですか？"
+        ]
+      ],
+      "count_total": 35,
+      "count_qa": 23,
+      "count_general": 12,
+      "date_counts": {
+        "2026-06-19": 1,
+        "2026-06-22": 2,
+        "2026-06-26": 3,
+        "2026-07-02": 3,
+        "2026-07-04": 1,
+        "2026-07-05": 2,
+        "2026-07-06": 3,
+        "2026-07-07": 1,
+        "2026-07-08": 5,
+        "2026-07-10": 1,
+        "2026-07-11": 1,
+        "2026-07-12": 1,
+        "2026-07-13": 4,
+        "2026-07-14": 7
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-14",
+          "count": 7
+        },
+        {
+          "date": "2026-07-08",
+          "count": 5
+        },
+        {
+          "date": "2026-07-13",
+          "count": 4
+        }
+      ],
+      "raw_examples": [
+        "can anyone help me get started or anything like that please",
+        "Why can’t console players join clans??",
+        "What is this? Can you help me?",
+        "What do i do if i skipped tutorial on accisent",
+        "and what do i do just take over random people",
+        "and what do i do just take over random people Yes",
+        "let me turn my console on whats ur luck level i am guessing its max like 300%",
+        "what is this?"
+      ]
+    },
+    {
+      "id": "statues_buffs",
+      "title": "Statue / Buff / Worker Statue V2",
+      "group": "バフ",
+      "confidence": "低",
+      "patterns": [
+        "\\b(statue|statues|worker statue|soldier statue|mech statue|vehicle buff|buffs count|range boost|20% statue|10% boost)\\b"
+      ],
+      "summary": "Worker/Soldier/Mech Statue、Vehicle buff、範囲バフ。",
+      "main_answer": "Worker Statue V1はShopで100k、10% boostという発言。V2はRaid/Crate系の話。Worker StatueはBuilderではなく生産Worker向けと見たほうがよさそう。",
+      "other_opinions": "Soldier Statueが効いているか、Vehicle buffがAir unitに効くかは未確定。",
+      "examples": [
+        [
+          "How do I get Worker Statue V2?",
+          "Worker Statue V2はどうやって入手しますか？"
+        ],
+        [
+          "Does Soldier Statue work?",
+          "Soldier Statueは機能していますか？"
+        ]
+      ],
+      "count_total": 40,
+      "count_qa": 21,
+      "count_general": 19,
+      "date_counts": {
+        "2026-06-24": 2,
+        "2026-06-25": 1,
+        "2026-06-27": 1,
+        "2026-07-01": 1,
+        "2026-07-03": 1,
+        "2026-07-07": 3,
+        "2026-07-08": 2,
+        "2026-07-09": 1,
+        "2026-07-10": 2,
+        "2026-07-12": 3,
+        "2026-07-13": 20,
+        "2026-07-14": 3
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-13",
+          "count": 20
+        },
+        {
+          "date": "2026-07-07",
+          "count": 3
+        },
+        {
+          "date": "2026-07-12",
+          "count": 3
+        }
+      ],
+      "raw_examples": [
+        "What does the mech statue do",
+        "What does the mech statue do Take the hammer and hoover over it itll tell you",
+        "do soldier statues even help?",
+        "justyou can put workers statue",
+        "yo whats the mech statue do",
+        "how to get the worket statue that gives 20+ speed",
+        "What does the mech statue even do?",
+        "Do the soldier statues work for vehicles?"
+      ]
+    },
+    {
+      "id": "uncategorized",
+      "title": "未分類・画像依存・短文質問",
+      "group": "その他",
+      "confidence": "低",
+      "summary": "画像・返信元依存、短文すぎる質問、雑談混入で分類が難しいもの。",
+      "main_answer": "ログ上で添付画像が[no text]になっているもの、返信元が欠けているものは公開QAでは低確度として扱う。",
+      "other_opinions": "必要に応じて手作業で分類を追加できるよう、raw_examplesを残す。",
+      "examples": [
+        [
+          "What is this?",
+          "これは何ですか？"
+        ]
+      ],
+      "count_total": 3385,
+      "count_qa": 1318,
+      "count_general": 2067,
+      "date_counts": {
+        "2026-06-15": 3,
+        "2026-06-16": 25,
+        "2026-06-17": 2,
+        "2026-06-18": 15,
+        "2026-06-19": 9,
+        "2026-06-20": 15,
+        "2026-06-21": 24,
+        "2026-06-22": 48,
+        "2026-06-23": 20,
+        "2026-06-24": 22,
+        "2026-06-25": 25,
+        "2026-06-26": 68,
+        "2026-06-27": 29,
+        "2026-06-28": 36,
+        "2026-06-29": 26,
+        "2026-06-30": 82,
+        "2026-07-01": 35,
+        "2026-07-02": 40,
+        "2026-07-03": 26,
+        "2026-07-04": 168,
+        "2026-07-05": 119,
+        "2026-07-06": 69,
+        "2026-07-07": 37,
+        "2026-07-08": 26,
+        "2026-07-09": 22,
+        "2026-07-10": 56,
+        "2026-07-11": 33,
+        "2026-07-12": 860,
+        "2026-07-13": 666,
+        "2026-07-14": 658,
+        "2026-07-15": 121
+      },
+      "peak_dates": [
+        {
+          "date": "2026-07-12",
+          "count": 860
+        },
+        {
+          "date": "2026-07-13",
+          "count": 666
+        },
+        {
+          "date": "2026-07-14",
+          "count": 658
+        }
+      ],
+      "raw_examples": [
+        "I can’t expand my country for some reason",
+        "↪ Nothing: I can’t expand my country for some reason You probaly alr got too many areas",
+        "where is the special",
+        "but still if you have space in base why not",
+        "↪ nosok202: but still if you have space in base why not yea maybe",
+        "@Bigphilscolari yes there is rewards",
+        "Should I buy the clone facility or the clone facility v2 because I have non of them and rn I have 900 gems should I wait for v2?",
+        "↪ Bu_salem: Should I buy the clone facility or the clone facility v2 because I have non of them and rn I have 900 gems should I wait for v2? both",
+        "what is the diferance between clone v1 and v2",
+        "↪ ! b: this is the difference",
+        "↪ ! b: How do I do this",
+        "↪ Bu_salem: How do I do this screenshot?"
+      ]
+    }
+  ]
+}
